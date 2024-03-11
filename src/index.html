@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/Images/photo_2024-02-20_00-54-32.jpg" />
+    <link
+      rel="stylesheet"
+      href="./snippet.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Code Hub</title>
+  </head>
+  <body class=" bg-[#0F172A]">
+    <div
+      class="max-w-6xl text-white p-10 flex flex-col mx-auto md:text-lg"
+      style="font-family: vazir"
+    >
+      <h1 class="text-3xl my-4 text-center w-full ">
+        بررسی داده ساختار Stack در<span class="text-yellow-400">
+          جاوا اسکریپت</span
+        >
+      </h1>
+      <p class="my-4 ">
+        پشته یک داده ساختار مهم در الگوریتمه که بر مبنای لیفو عمل می کنه یعنی
+        آخرین عنصری که وارد میشه اولین عنصریه که خارج میشه.
+      </p>
+      <span class="my-4 "
+        >داده ساختار مهمی که خیلی پر کاربرد و پای ثابت مصاحبه ها هستش.</span
+      >
+      <p class="my-4 ">پشته یک داده ساختار انتزاعی یعنی چی ?</p>
+      <p class="my-4 ">
+        یعنی این که پشته به صورت فیزیکی داخل حافظه پیاده سازی نمیشه و ما میتونیم
+        با داده ساختار های دیگه مثل آرایه و لیست پیوندی و ... پشته رو پیاده سازی
+        کنیم.
+      </p>
+      <span class="my-4 ">این داده ساختار این طوری عمل می کنه که : </span>
+      <ul class="list-decimal my-4 text-justify mr-8 gap-y-6">
+        <li class="text-justify my-4 ">
+          در پشته برای اضافه کردن یا برداشتن هر عنصر ما باید جایگاه بالاترین
+          عنصر رو بدونیم , بیشتر اوقات این مقدار در متغیری به اسم Top ذخیره
+          میشه.
+        </li>
+        <li class="text-justify my-4">
+          در ابتدا که پشته خالیه و هیچ عنصری داخل آن وجود نداره مقدار TOP برابر
+          1- قرار میدییم.
+        </li>
+        <li class="text-justify my-4">
+          پشته دو متد اصلی به نام های PUSH که برای اضافه کردن مقدار به پشته و
+          POP که برای برداشتن مقدار از پشته است.
+        </li>
+        <li class="text-justify my-4">
+          مقدار TOP در PUSH یکی اضافه میشه ولی در POP یکی از آن کم می کنیم.
+        </li>
+      </ul>
+      <span class="my-4 ">داخل عکس زیر نحوه کار پشته رو می بینید:</span>
+      <img
+        src="./assets/Images/push-and-pop-operation-in-stack 1.png"
+        alt="Stack"
+        class="my-4"
+      />
+      <h2 class="my-4 ">
+        هر داده ساختاری در یک موضوع به خصوص قوی و به درد بخور است و در یک موضوع
+        ضعیف و نقطه ضعف داره که نقاط ضعف و قوت پشته رو با هم بررسی کنیم :
+      </h2>
+      <h3 class="my-4 text-lg ">از نقاط ضعف اون میتونیم اشاره کنیم به :</h3>
+      <ul class="my-4 mr-8 gap-3 list-disc ">
+        <li class="my-4 ">
+          حداکثر تعداد عناصری که یک پشته میتونه نگه داری بکنه محدوده و ما در
+          پشته مشکل اندازه محدود رو داریم .
+        </li>
+        <li class="my-4 ">
+          ما در پشته فقط میتونیم به عنصر اخر دسترسی پیدا کنیم و عملا مفهوم
+          پیمایش کردن در پشته جایگاهی نداره.
+        </li>
+        <li class="my-4 ">
+          در برخی پیاده سازی ها ممکنه باغث بشه که در حافظه مشکلاتی ایجاد بشه.
+        </li>
+      </ul>
+      <h3 class="my-4 text-lg ">از نقاط قوت اون میتونیم اشاره کنیم به :</h3>
+      <ul class="my-4 list-disc  mr-8">
+        <li class="my-4 ">
+          همان طور که قبلا گفته شد الگوریتم پشته یک نوع از الگوریتم های انتزاعی
+          است پس میتوان با آرایه , لیست پیوندی و ... برای پیاده سازی این
+          الگوریتم استفاده کرد.
+        </li>
+        <li class="my-4 ">این الگوریتم در زبان های مختلف پیاده سازی ساده ای داره.</li>
+        <li class="my-4 ">
+          این الگوریتم نسبت به بقیه الگوریتم ها مانند صف سرعت بیشتری داره.
+        </li>
+      </ul>
+      <h3 class="my-4 text-lg ">نکات مهمی که در باره پشته باید بدونیم اینه که :</h3>
+      <ul class="my-4 list-disc  mr-8 ">
+        <li class="my-4 ">
+          زمان اجرای هر کدان از عملیات PUSH , POP در پشته ثابت است و از نوع(1) O
+          است.
+        </li>
+        <li class="my-4 ">
+          پشته بیشتر در فراخوانی توابع بازگتشی کاربرد داره , هنگامی که یک تابع
+          فراخوانی میشه اطلاعات و ترتیب اجرا توابع در پشته ذخیره میشه.
+        </li>
+        <li class="my-4 ">
+          در بسیاری از الگوریتم‌ها مانند الگوریتم DFS (جستجوی عمق اول) و حل
+          مسائل گرافی، پشته به عنوان یک ابزار مؤثر برای ذخیره و بازگشت به
+          اطلاعات استفاده می‌شود.
+        </li>
+      </ul>
+
+      <span class="my-4 text-xl">یک نمونه مثال از پشته رو می بینید که در    <span class="text-yellow-400">جاوا اسکریپت</span> نوشته شده :</span>
+
+      <pre dir="ltr">
+          class Stack {
+               constructor() {
+                 this.items = [];
+               }
+             
+               push(element) {
+                 this.items.push(element);
+               }
+             
+               pop() {
+                 if (this.items.length === 0) {
+                   return "Underflow";
+                 }
+                 return this.items.pop();
+               }
+             
+               peek() {
+                 return this.items[this.items.length - 1];
+               }
+             
+               isEmpty() {
+                 return this.items.length === 0;
+               }
+             
+               size() {
+                 return this.items.length;
+               }
+             
+               display() {
+                 console.log(this.items);
+               }
+             }
+             
+             // Example usage:
+             const stack = new Stack();
+             stack.push(1);
+             stack.push(2);
+             stack.push(3);
+             stack.display(); // Output: [1, 2, 3]
+             
+             stack.pop();
+             stack.display(); // Output: [1, 2]
+             
+             console.log("Peek:", stack.peek()); // Output: Peek: 2
+             console.log("Size:", stack.size()); // Output: Size: 2
+             console.log("Is Empty:", stack.isEmpty()); // Output: Is Empty: false
+          </pre>
+          
+          <codapi-snippet engine="browser" sandbox="javascript" editor="basic">
+               <codapi-toolbar>
+               </codapi-toolbar>
+               <codapi-output>
+               </codapi-output>
+           </codapi-snippet>
+           <div class="my-44 flex items-center justify-center flex-row-reverse gap-10">
+            <a href="https://t.me/codeeehub"><img class="hover:scale-95 transition duration-100 md:w-24 w-10" src="./assets/Images/telegram-svgrepo-com.svg" alt="Telegram Icon"></a>
+            <a href="https://www.youtube.com/@CodeeeHub"><img class="hover:scale-95 transition duration-100 md:w-24 w-10" src="./assets/Images/youtube-color-svgrepo-com.svg" alt="Youtube Icon"></a>
+            <a href="https://github.com/CodeeeHub"><img class="hover:scale-95 transition duration-100 md:w-24 w-10" src="./assets/Images/github-svgrepo-com.svg" alt="GitHub Icon" ></a>
+            <img src="./assets/Images/photo_2024-02-20_00-54-32.jpg"  class="rounded-sm md:w-24 w-10 hover:scale-95 transition duration-100"/>
+           </div>
+    </div>
+    <script src="https://unpkg.com/@antonz/codapi@0.12.0/dist/snippet.js"></script>
+  </body>
+</html>

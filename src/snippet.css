@@ -1,0 +1,49 @@
+pre{
+     background-color: rgb(33, 36, 36);
+     color: rgb(209, 198, 198);
+     border-radius: 10px;
+     padding: 10px; 
+     border: 1px solid white;
+     white-space-collapse:preserve-breaks;
+     text-wrap: wrap;
+
+}
+
+
+codapi-snippet {
+     --toolbar-gap: 1em;
+     --toolbar-margin-bottom: 1em;
+     margin-top: 20px;
+     background-color: rgb(250, 204, 21);
+     border-radius: 10px;
+     padding: 10px;
+     color: black;
+     display: block;
+ }
+ 
+
+ 
+ codapi-status {
+     display: block;
+     white-space: nowrap;
+ }
+ 
+ codapi-output {
+     position: relative;
+     display: block;
+     padding: 20px;
+ }
+ codapi-output[hidden] {
+     display: none;
+ }
+ codapi-output a[href="#close"] {
+     position: absolute;
+     top: 0.25em;
+     right: 0.25em;
+     display: inline-block;
+     width: 1.5em;
+     height: 1.5em;
+     line-height: 1.5em;
+     background-color: rgb(255, 0, 0);
+     text-align: center;
+ }
